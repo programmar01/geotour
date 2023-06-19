@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block head %}<title>Flask App</title>{% endblock %}
+
+{% block body %}
+
+    <h1 id="welcome">Welcome To OrderTours Company!</h1>
+    <div class="gallery">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg20yP67lvRQJ-kgN-c6A3J7YTh0UV8OBzrZGy7e5QXjNDi68zzf-jnsDdwEt6ittq0aHAFnDq53BWzK2Nxv1lR0HIHHDRigEk8IZxEhwBrj2EKAGftjX1qxho1WN0zHfZla5YbcWk0q680jKbPI0KmYVIYAiWowiF5SXqCzklLGC3S5r40cDXKz-G9Vw/w640-h402/4.jpg" id="image">
+        <script type="text/javascript">
+            let image = document.getElementById('image');
+            let images = ["https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj38asjy2HtIN9mKAwrWc2LPeufP1XSBvEqzEthuh8E1CAMkQIfJDnusZXfv8XowgUq4EPK5X9-S1tetq8y9cpTkdXjzus8cEgrFCDj8RxnTkSz6Y-FTcPwmEeU5QhXhTX0vlLEMgx-S2pUYUVOCMDVg37GmA_3_WlK7HnuElDQgRdPnNGJT7Oaipx1g/w640-h402/1.jpg", "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhz1O_2qxm1EB4ePPWsI9EXBhU-u0ZXTmt6woX3Zn9WoQN3yRwS2D6n1un1REhu80FdkVcpzKkoaB9tnMeh_GcfT_ZkgNEIW7a1eK2BpRBNJa5mQJiA0utc2hOckrjyv_QaNBMUJ4E6FtxbjKSlEZNK5pNEfBVnSCjnoee96dr7fpMxGYpVswg-HUVkGQ/w640-h402/2.jpg", "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiR3uLu4Umh-JRfWjx6lPVLldi_Q5brhe2T7I9cLImw_FlDNKKN9j--m7TmtTj1H59av0ihOw4YTJAUE3a2Po3SrF-WeLxS1ZMY6cCkJ8MXiV28L9MqORbmn8q7LeaQYG-Hp2GBHg34bLylZSTJfDJiOa3HEVc1zm6juMKGeerbrNyJd1ni8ldXaUTW8w/w640-h402/3.jpg", "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg20yP67lvRQJ-kgN-c6A3J7YTh0UV8OBzrZGy7e5QXjNDi68zzf-jnsDdwEt6ittq0aHAFnDq53BWzK2Nxv1lR0HIHHDRigEk8IZxEhwBrj2EKAGftjX1qxho1WN0zHfZla5YbcWk0q680jKbPI0KmYVIYAiWowiF5SXqCzklLGC3S5r40cDXKz-G9Vw/w640-h402/4.jpg"]
+            setInterval(function(){
+            let random = Math.floor(Math.random() * 4);
+            image.src = images[random];
+            }, 3800);
+        </script>
+    </div>
+
+    <div class="info">
+        <h1 style="margin-bottom: 50px;">Fill the form to receive discount!</h1>
+        <form action="#" method="post">
+          <table>
+           <tr>
+            <td>Name:</td>
+            <td><input type="text" name="name"></td>
+           </tr>
+           <tr>
+            <td>Lastname:</td>
+            <td><input type="text" name="lastname"></td>
+           </tr>
+           <tr>
+            <td>Email :</td>
+            <td><input type="email" name="mail"></td>
+           </tr>
+           <tr>
+            <td>Phone no :</td>
+            <td>
+             <input type="phone" name="phone">
+            </td>
+           </tr>
+           <tr>
+            <td><input type="submit" value="Submit"></td>
+           </tr>
+          </table>
+         </form>
+
+    </div>
+    <div class="info" style="background-color: rgb(0, 44, 255);">
+        <div><h1 style="margin-bottom: 50px;">Ongoing Tours:</h1></div>
+        <div class="all-tours">
+            <div class="tour-block" style="margin-left: 0px;">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg20yP67lvRQJ-kgN-c6A3J7YTh0UV8OBzrZGy7e5QXjNDi68zzf-jnsDdwEt6ittq0aHAFnDq53BWzK2Nxv1lR0HIHHDRigEk8IZxEhwBrj2EKAGftjX1qxho1WN0zHfZla5YbcWk0q680jKbPI0KmYVIYAiWowiF5SXqCzklLGC3S5r40cDXKz-G9Vw/w640-h402/4.jpg"></img>
+                <h2>Tour To Sairme!</h2>
+                <p>During the tour you will be able to...
+                    <br>The price of the tour is ... USD
+                    <br>In the tour is included...</p>
+                <button class="read"><a href="#">Read More...</a></button>
+            </div>
+
+            <div class="tour-block">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiR3uLu4Umh-JRfWjx6lPVLldi_Q5brhe2T7I9cLImw_FlDNKKN9j--m7TmtTj1H59av0ihOw4YTJAUE3a2Po3SrF-WeLxS1ZMY6cCkJ8MXiV28L9MqORbmn8q7LeaQYG-Hp2GBHg34bLylZSTJfDJiOa3HEVc1zm6juMKGeerbrNyJd1ni8ldXaUTW8w/w640-h402/3.jpg"></img>
+                <h2>Tour To Birtvisi!</h2>
+                <p>During the tour you will be able to...
+                    <br>The price of the tour is ... USD
+                    <br>In the tour is included...</p>
+                <button class="read"><a href="#">Read More...</a></button>
+            </div>
+
+            <div class="tour-block">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhz1O_2qxm1EB4ePPWsI9EXBhU-u0ZXTmt6woX3Zn9WoQN3yRwS2D6n1un1REhu80FdkVcpzKkoaB9tnMeh_GcfT_ZkgNEIW7a1eK2BpRBNJa5mQJiA0utc2hOckrjyv_QaNBMUJ4E6FtxbjKSlEZNK5pNEfBVnSCjnoee96dr7fpMxGYpVswg-HUVkGQ/w640-h402/2.jpg"></img>
+                <h2>Tour To Zedazeni!</h2>
+                <p>During the tour you will be able to...
+                    <br>The price of the tour is ... USD
+                    <br>In the tour is included...</p>
+                <button class="read"><a href="#">Read More...</a></button>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

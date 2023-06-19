@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    color: white;
+    background-color: rgb(12, 166, 34);
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(orange, rgb(12, 166, 34), orange);
+}
+
+#welcome{
+    text-align: center;
+    margin-top: 50px
+}
+.gallery img{
+
+    display: block;
+    max-width: 800px;
+    min-width: 400px;
+    margin: 0 auto;
+    transition: 0.5s;
+    margin-top: 50px;
+    border: solid 5px white;
+}
+
+
+.footer{
+    min-height: 200px;
+    margin-top: 150px;
+    flex-grow: 1;
+    background-color: rgb(40, 40, 40);
+}
+
+#contact-info{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+
+ul {
+  list-style: none;
+  font-size: 20px;
+}
+
+.info{
+    width: 90%;
+    padding: 50px;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: rgb(150, 100, 100);
+    box-shadow: 10px 10px 10px black;
+
+}
+
+.tour-block {
+    max-width: 30%;
+    min-width: 350px;
+    border: solid 5px white;
+    display: inline-block;
+    text-align: center;
+    margin-left: 3%;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px black;
+    background-color: rgb(255, 0, 202);
+}
+
+.tour-block img {
+    width: 100%;
+}
+
+.read {
+    margin-bottom: 20px;
+    border: solid 2px rgb(100, 100, 100);
+    background-color: rgb(150, 100, 100);
+    box-shadow: 1px 1px 3px black;
+
+}
+
+.read a {
+    text-decoration: none;
+    color: white;
+}
+
+.all-tours {
+    text-align: center;
+}
+
+.products-grid {
+    display: grid;
+}
+
+@media (max-width: 400px) {
+    .products-grid {
+        grid-template-columns: 1fr;}
+}
+
+@media (min-width: 401px) and (max-width: 750px){
+    .products-grid {
+        grid-template-columns: 1fr 1fr;}
+}
+
+@media (min-width: 751px) and (max-width: 999px){
+    .products-grid {
+        grid-template-columns: 1fr 1fr 1fr;}
+}
+
+@media (min-width: 1000px) {
+    .products-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;}
+}
+
+
+
+.tour-block-products {
+    text-align: center;
+    margin: 10px;
+    border: solid 5px white;
+    box-shadow: 7px 7px 7px black;
+}
+
+
+
+.tour-block-products img {
+    width: 100%;
+}
+
+.about-block {
+    display: flex;
+    flex-direction: row;
+    margin: 100px 10%;
+    background-image: linear-gradient(rgb(150, 150, 200), rgb(80, 80, 250));
+    padding: 20px;
+    margin-bottom: 150px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.about-img {
+    width: 30%;
+}
+
+.about-img img{
+    width: 100%;
+    border-radius: 15%;
+}
+
+.about-text {
+    text-align: center;
+}
+
+.staff {
+    margin: 0px 10%;
+}
+
+.employees {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.employee {
+    margin-top: 50px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+}
+
+.employee img{
+    width: 100%;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: orange;
+    box-shadow: 2px 2px 5px black;
+    object-fit: cover;
+}
+.navbar{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-image: linear-gradient(yellow, orange);
+}
+#logo{
+    width: 80px;
+    border-radius: 50%;
+
+}
